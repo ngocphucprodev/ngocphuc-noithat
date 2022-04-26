@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.menu-header-left{
+    padding: 20px 0px 20px 0px;
+}
+.menu-left-list{
+    display: flex;
+}
+.menu-item{
+    padding: 0px 20px 0px 20px;
+}
+.menu-item a{
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+}

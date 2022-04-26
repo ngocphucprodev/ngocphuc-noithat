@@ -1,0 +1,44 @@
+.content{
+    padding-top: 100px;
+}
+/* .detail-product-image{
+} */
+
+.brand{
+    padding-top: 100px;
+}
+.brand-info{
+    padding: 50px 50px 0px 50px;
+}
+.brand-info span{
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+.brand-info h3{
+    margin-top: 20px;
+    line-height: 42px;
+    font-family: 'Qwenzy';
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000;
+    text-transform: capitalize;
+}
+.brand-info p{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+.revert-col{
+    flex-direction: row-reverse;
+}

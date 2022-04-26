@@ -1,0 +1,59 @@
+.cart{
+    padding-top: 100px;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+.cart-info-product{
+    padding-left: 30px;
+}
+.detail-bill{
+    margin-top: 50px;
+}
+.warraper{
+    background-color: #f0f0f0;
+}
+
+.total-bill{
+    padding: 100px 50px 100px 50px;
+    background-color: #fff;
+}
+.amount{
+    margin-left: 10px;
+}
+form{
+    margin-top: 50px;
+}
+form label{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-weight: bolder;
+}
+.input-group{
+    margin-top: 20px;
+}
+.input-group input{
+    width: 300px;
+    height: 25px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    box-shadow: unset;
+    border-bottom: 1px solid #E5E5E5;
+    border-radius: unset;
+}
+.booking{
+    margin-top: 20px;
+}
+.booking button{
+    border: none;
+    width: 300px;
+    height: 40px;
+    font-weight: 800;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
