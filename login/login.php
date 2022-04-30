@@ -17,12 +17,12 @@
         <div class="row login-form">
             <div class="col-md-12">
                     <h4>Đăng nhập</h4>
-                    <form action="" method="post">
+                    <form action="" method="POST">
                         <div class="input-group mb-3">
-                            <input type="text" name="log" class="form-control" placeholder="Email">
+                            <input type="text" name="email" class="form-control" placeholder="Email">
                         </div>
                         <div class="input-group mb-3">
-                            <input type="password" name="pwd" class="form-control" placeholder="Mật khẩu">
+                            <input type="password" name="password" class="form-control" placeholder="Mật khẩu">
                         </div>
                         <div class="forget-pass">
                             <div class="miss-login">
@@ -36,11 +36,18 @@
                         </div>
                         <div class="contact-button">
                             <input type="hidden" name="azhome_nonce" value="723b54b4c7">
-                            <button class="btn-azhome" type="submit">Đăng nhập</button>
+                            <input class="btn-azhome" type="submit" name="form_click" value="Gửi Dữ Liệu"/><br/>
                         </div>
                         <p>Ban chưa có tài khoản? <a class="now-register" href="https://azhome.co/dang-ky/">Đăng ký ngay</a></p>
-                                                </form>
-                                </div>
+                    </form> 
+                    <?php
+                    if (isset($_POST['email']) && isset($_POST['password']) ){
+                        echo 'Tên đăng nhập là: ' . $_POST['email'];
+                        echo '<br/>';
+                        echo 'Mật khẩu là: ' . $_POST['password'];
+                    }
+                    ?>
+          </div>
         </div>
     </div>
     <script src="../asset/js/common.js"></script>

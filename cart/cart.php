@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +16,26 @@
 </head>
 <body>
     <div id="header"></div>
+    <?php
+    include "../config/connect.php";
+    echo "<pre>";
+        $sql = "SELECT * FROM `products` WHERE `product-id` = " . $_GET['id'];
+        $result = mysqli_query(new mysqli('localhost', 'root', '', 'noithat'), $sql);
+        $product = mysqli_fetch_assoc($result);
+    echo "</pre>";
+
+    ?>
     <div class="warraper">
          <div class="container cart row">
         <div class="info-bill col-sm-8">
+<?php
+    $newarray = array();
+    $_SESSION['products'] = $product;
+    array_push($newarray,$_SESSION['products']);
+    echo "<pre>";
+    var_dump($newarray);
+    echo "</pre>" 
+?>
             <div class="detail-bill row">
                 <div class="col-sm-5">
                     <img src="../asset/images/gordon.jpg" alt="">
@@ -75,6 +95,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2"></div>
+                <a href="../home/home.php">Tiếp tục mua hàng</a>
             </div>
         </div>
         <div class="total-bill col-sm-4">

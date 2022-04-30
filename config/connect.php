@@ -1,7 +1,7 @@
 <?php
 
 // Kết nối CSDL
-$conn = new mysqli('localhost', 'root', '', 'noithat');
+$conn = mysqli_connect('localhost', 'root', '', 'noithat');
  
 // Kiểm tra kết nối
 if ($conn->connect_error) {
@@ -23,6 +23,6 @@ $result = $conn->query($sql);
 
  
 // ngắt kết nối
-$conn->close();
+// $conn->close();
 
 ?>

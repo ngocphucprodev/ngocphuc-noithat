@@ -24,7 +24,10 @@
             <div class="product-list">
                 <?php
                     include "../config/connect.php";
-
+                    $sql = "SELECT * FROM products";
+ 
+// Thực thi câu truy vấn và gán vào $result
+$result = $conn->query($sql);
                     foreach($result as $row) { ?>
                             <div class="product-list-item col-sm-4">
                                 <a href="../detail/detail.php?<?='id='.$row['product-id'] ?>">
